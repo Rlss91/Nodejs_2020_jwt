@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="javascripts/index.js"></script>
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+  <form action="/auth/login" method="post">
+    <button>click me</button>
+  </form>
+  <form action="/users" method="post">
+    <input type="text" name="token" id="token"
+      value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFndGVvaWppMzI0bGttIiwiaWF0IjoxNTk0NjYwOTI3LCJleHAiOjE1OTU1MjQ5Mjd9.ZO0n5oXRe5ES4lsRjFW1vWDQudRlqaWUbhwj8CvRXRM">
+    <button>click me</button>
+  </form>
+  <div>
+    <button onclick="handleClick(event)">get token</button>
+    <button onclick="handleClick1(event)">get users</button>
+    <button onclick="handleClick2(event)">get users haddr</button>
+  </div>
+</body>
+
+</html>
